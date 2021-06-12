@@ -46,6 +46,7 @@ def main ():
             print("Eres muy bueno \nLo lograste en: " + str(intentos))
             #contador +=1
             break
+    """Soy nuevo y bueno con el meger """
         
 
 
