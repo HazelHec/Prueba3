@@ -24,7 +24,6 @@ def main ():
     else:
         print("No es un palindromo\n\n")
 
-
     print("Muy bien ahora vamos a hacer una cosa más")
     contador = 0
     intentos = 0
