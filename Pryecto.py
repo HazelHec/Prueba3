@@ -1,11 +1,28 @@
 import random
 
 
+def palindromo (palabra):
+    palabra = palabra.replace(" ", "")
+    palabra = palabra.lower()
+    palabra_invertida = palabra[::-1]
+    if palabra == palabra_invertida:
+        return True
+    else:
+        return False
+
 def main ():
     print ("Probando el uso de git para ser un mejor programador a futuro")
     palabra = input("Por favor escribe una palabra  ")
     for i in range (10):
         print(palabra)
+    
+    #bash moding
+    print ("\n\nAdemas descubriremos si tu palabra es un palindromo o no")
+    es_palindromo = palindromo(palabra)
+    if es_palindromo == True:
+        print("Tu plabra es un palindromo")
+    else:
+        print("No es un palindromo\n\n")
 
     print("Muy bien ahora vamos a hacer una cosa más")
     contador = 0
