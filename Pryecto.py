@@ -17,14 +17,19 @@ def main ():
         if numero < numero_random:
             print("Aún falta para lograrlo \n")
             intentos += 1
+            numero = int(input("Intentalo de nuevo: "))
+            continue
         elif numero > numero_random:
             print("Te exediste \n")
             intentos += 1
+            numero = int(input("Intentalo de nuevo: "))
+            continue
         else:
             intentos += 1
             print("Eres muy bueno \nLo lograste en: " + str(intentos))
-            contador +=1
-        numero = int(input("Intentalo de nuevo: "))
+            #contador +=1
+            break
+        
 
 
 
